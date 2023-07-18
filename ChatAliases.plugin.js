@@ -11,3 +11,6 @@ getName () {return this.name;}
 		getAuthor () {return this.author;}
 getVersion () {return this.version;}
 		getDescription () {return `The Library Plugin needed for ${this.name} is missing. Open the Plugin Settings to download it. \n\n${this.description}`;}
+
+		downloadLibrary () {
+			require("request").get("https://mwittrien.github.io/BetterDiscordAddons/Library/0BDFDB.plugin.js", (e, r, b) => {
