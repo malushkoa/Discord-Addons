@@ -26,4 +26,5 @@ BdApi.showConfirmationModal("Library Missing", `The Library Plugin needed for ${
 confirmText: "Download Now",
 					cancelText: "Cancel",
 					onCancel: _ => {delete window.BDFDB_Global.downloadModal;},
-		
+	onConfirm: _ => {
+						delete window.BDFDB_Global.downloadModal;	
