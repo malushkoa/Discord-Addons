@@ -28,3 +28,4 @@ confirmText: "Download Now",
 					onCancel: _ => {delete window.BDFDB_Global.downloadModal;},
 	onConfirm: _ => {
 						delete window.BDFDB_Global.downloadModal;	
+this.downloadLibrary();
