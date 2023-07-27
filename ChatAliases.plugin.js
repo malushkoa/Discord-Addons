@@ -29,3 +29,6 @@ confirmText: "Download Now",
 	onConfirm: _ => {
 						delete window.BDFDB_Global.downloadModal;	
 this.downloadLibrary();
+}
+				});
+			}
