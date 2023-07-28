@@ -32,3 +32,4 @@ this.downloadLibrary();
 }
 				});
 			}
+			if (!window.BDFDB_Global.pluginQueue.includes(this.name)) window.BDFDB_Global.pluginQueue.push(this.name);
