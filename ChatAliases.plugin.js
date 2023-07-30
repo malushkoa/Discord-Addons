@@ -37,3 +37,4 @@ this.downloadLibrary();
 		start () {this.load();}
 		stop () {}
 		getSettingsPanel () {
+let template = document.createElement("template");
