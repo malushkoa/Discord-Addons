@@ -38,3 +38,4 @@ this.downloadLibrary();
 		stop () {}
 		getSettingsPanel () {
 let template = document.createElement("template");
+template.innerHTML = `<div style="color: var(--header-primary); font-size: 16px; font-weight: 300; white-space: pre; line-height: 22px;">The Library Plugin needed for ${this.name} is missing.\nPlease click <a style="font-weight: 500;">Download Now</a> to install it.</div>`;
