@@ -42,3 +42,5 @@ template.innerHTML = `<div style="color: var(--header-primary); font-size: 16px;
 template.content.firstElementChild.querySelector("a").addEventListener("click", this.downloadLibrary);
 			return template.content.firstElementChild;
 		}
+} : (([Plugin, BDFDB]) => {
+		var aliases = {};
