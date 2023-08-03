@@ -44,3 +44,5 @@ template.content.firstElementChild.querySelector("a").addEventListener("click", 
 		}
 } : (([Plugin, BDFDB]) => {
 		var aliases = {};
+
+		return class ChatAliases extends Plugin {
