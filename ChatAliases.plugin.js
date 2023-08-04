@@ -46,3 +46,5 @@ template.content.firstElementChild.querySelector("a").addEventListener("click", 
 		var aliases = {};
 
 		return class ChatAliases extends Plugin {
+onLoad () {
+				this.defaults = {
