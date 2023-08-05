@@ -48,3 +48,5 @@ template.content.firstElementChild.querySelector("a").addEventListener("click", 
 		return class ChatAliases extends Plugin {
 onLoad () {
 				this.defaults = {
+configs: {
+						case: 				{value: false,		description: "Handles the Word Value case sensitive"},
