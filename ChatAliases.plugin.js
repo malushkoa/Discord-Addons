@@ -51,3 +51,5 @@ onLoad () {
 configs: {
 						case: 				{value: false,		description: "Handles the Word Value case sensitive"},
 exact: 				{value: true,		description: "Handles the Word Value as an exact Word and not as part of a Word"},
+regex: 				{value: false,		description: "Handles the Word Value as a RegExp String"}
+					},
