@@ -53,3 +53,6 @@ configs: {
 exact: 				{value: true,		description: "Handles the Word Value as an exact Word and not as part of a Word"},
 regex: 				{value: false,		description: "Handles the Word Value as a RegExp String"}
 					},
+general: {
+						addContextMenu:		{value: true, 		inner: false,		description: "Adds a Context Menu Entry to more freely add new Aliases"}
+					},
