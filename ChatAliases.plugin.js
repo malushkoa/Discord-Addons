@@ -56,3 +56,5 @@ regex: 				{value: false,		description: "Handles the Word Value as a RegExp Stri
 general: {
 						addContextMenu:		{value: true, 		inner: false,		description: "Adds a Context Menu Entry to more freely add new Aliases"}
 					},
+places: {
+						normal:				{value: true, 		inner: true,		description: "Normal Message Textarea"},
