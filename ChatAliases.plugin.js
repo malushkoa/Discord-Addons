@@ -58,3 +58,7 @@ general: {
 					},
 places: {
 						normal:				{value: true, 		inner: true,		description: "Normal Message Textarea"},
+	edit:				{value: true, 		inner: true,		description: "Edit Message Textarea"}
+					}
+				};
+				
