@@ -61,4 +61,7 @@ places: {
 	edit:				{value: true, 		inner: true,		description: "Edit Message Textarea"}
 					}
 				};
-				
+		
+				this.modulePatches = {
+					before: [
+						"ChannelTextAreaContainer"		
