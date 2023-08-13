@@ -65,3 +65,6 @@ places: {
 				this.modulePatches = {
 					before: [
 						"ChannelTextAreaContainer"		
+	]
+				};
+			}
