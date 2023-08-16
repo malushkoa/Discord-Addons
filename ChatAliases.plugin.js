@@ -73,3 +73,6 @@ places: {
 				aliases = BDFDB.DataUtils.load(this, "words");
 BDFDB.PatchUtils.forceAllUpdates(this);
 			}
+onStop () {
+				BDFDB.PatchUtils.forceAllUpdates(this);
+			}
