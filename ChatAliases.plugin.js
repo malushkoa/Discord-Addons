@@ -76,3 +76,6 @@ BDFDB.PatchUtils.forceAllUpdates(this);
 onStop () {
 				BDFDB.PatchUtils.forceAllUpdates(this);
 			}
+
+			getSettingsPanel (collapseStates = {}) {
+				let settingsPanel;
