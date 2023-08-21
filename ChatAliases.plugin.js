@@ -81,3 +81,5 @@ onStop () {
 				let settingsPanel;
 return settingsPanel = BDFDB.PluginUtils.createSettingsPanel(this, {
 					collapseStates: collapseStates,
+children: _ => {
+						let settingsItems = [];
