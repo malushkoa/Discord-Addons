@@ -85,3 +85,4 @@ children: _ => {
 						let settingsItems = [];
 
 						settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
+title: "Settings",
