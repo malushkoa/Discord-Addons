@@ -88,3 +88,5 @@ children: _ => {
 title: "Settings",
 collapseStates: collapseStates,
 							children: Object.keys(this.defaults.general).map(key => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsSaveItem, {
+type: "Switch",
+								plugin: this,
