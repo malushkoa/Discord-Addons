@@ -92,3 +92,4 @@ type: "Switch",
 								plugin: this,
 keys: ["general", key],
 								label: this.defaults.general[key].description,
+value: this.settings.general[key]
