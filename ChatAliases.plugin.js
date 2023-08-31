@@ -93,3 +93,4 @@ type: "Switch",
 keys: ["general", key],
 								label: this.defaults.general[key].description,
 value: this.settings.general[key]
+})).concat(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsPanelList, {
