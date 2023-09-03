@@ -95,3 +95,5 @@ keys: ["general", key],
 value: this.settings.general[key]
 })).concat(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsPanelList, {
 	title: "Automatically replace Aliases in:",
+children: Object.keys(this.settings.places).map(key => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsSaveItem, {
+									type: "Switch",
