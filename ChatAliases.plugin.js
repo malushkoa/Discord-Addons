@@ -97,3 +97,5 @@ value: this.settings.general[key]
 	title: "Automatically replace Aliases in:",
 children: Object.keys(this.settings.places).map(key => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsSaveItem, {
 									type: "Switch",
+plugin: this,
+									keys: ["places", key],
