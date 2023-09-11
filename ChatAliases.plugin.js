@@ -99,3 +99,4 @@ children: Object.keys(this.settings.places).map(key => BDFDB.ReactUtils.createEl
 									type: "Switch",
 plugin: this,
 									keys: ["places", key],
+label: this.defaults.places[key].description,
