@@ -100,3 +100,6 @@ children: Object.keys(this.settings.places).map(key => BDFDB.ReactUtils.createEl
 plugin: this,
 									keys: ["places", key],
 label: this.defaults.places[key].description,
+	value: this.settings.places[key]
+								}))
+							}))
