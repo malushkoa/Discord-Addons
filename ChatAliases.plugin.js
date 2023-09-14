@@ -103,3 +103,6 @@ label: this.defaults.places[key].description,
 	value: this.settings.places[key]
 								}))
 							}))
+}));
+						
+						let values = {wordValue: "", replaceValue: ""};
