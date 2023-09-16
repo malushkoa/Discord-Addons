@@ -108,3 +108,6 @@ label: this.defaults.places[key].description,
 						let values = {wordValue: "", replaceValue: ""};
 settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
 							title: "Add new Alias",
+collapseStates: collapseStates,
+							children: [
+								BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsItem, {
