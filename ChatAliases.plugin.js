@@ -111,3 +111,5 @@ settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Collap
 collapseStates: collapseStates,
 							children: [
 								BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsItem, {
+	type: "Button",
+									label: "Pick a Word Value and Replacement Value:",
