@@ -113,3 +113,5 @@ collapseStates: collapseStates,
 								BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsItem, {
 	type: "Button",
 									label: "Pick a Word Value and Replacement Value:",
+disabled: !Object.keys(values).every(valueName => values[valueName]),
+									children: BDFDB.LanguageUtils.LanguageStrings.ADD,
