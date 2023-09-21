@@ -119,3 +119,8 @@ ref: instance => {if (instance) values.addButton = instance;},
 									onClick: _ => {
 										this.saveWord(values);
 										BDFDB.PluginUtils.refreshSettingsPanel(this, settingsPanel, collapseStates);
+}
+								}),
+								this.createInputs(values)
+							].flat(10).filter(n => n)
+						}));
