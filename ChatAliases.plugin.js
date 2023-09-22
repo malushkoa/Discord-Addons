@@ -124,3 +124,6 @@ ref: instance => {if (instance) values.addButton = instance;},
 								this.createInputs(values)
 							].flat(10).filter(n => n)
 						}));
+
+						if (!BDFDB.ObjectUtils.isEmpty(aliases)) settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
+							title: "Added Aliases",
