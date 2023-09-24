@@ -127,3 +127,5 @@ ref: instance => {if (instance) values.addButton = instance;},
 
 						if (!BDFDB.ObjectUtils.isEmpty(aliases)) settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
 							title: "Added Aliases",
+collapseStates: collapseStates,
+							children: BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsList, {
