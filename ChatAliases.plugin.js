@@ -129,3 +129,5 @@ ref: instance => {if (instance) values.addButton = instance;},
 							title: "Added Aliases",
 collapseStates: collapseStates,
 							children: BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsList, {
+settings: Object.keys(this.defaults.configs),
+								data: Object.keys(aliases).map((wordValue, i) => Object.assign({}, aliases[wordValue], {
