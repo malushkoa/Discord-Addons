@@ -134,3 +134,6 @@ settings: Object.keys(this.defaults.configs),
 	label: wordValue
 								})),
 								renderLabel: data => BDFDB.ReactUtils.createElement("div", {
+style: {width: "100%"},
+									children: [
+										BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.TextInput, {
