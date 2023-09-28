@@ -137,3 +137,5 @@ settings: Object.keys(this.defaults.configs),
 style: {width: "100%"},
 									children: [
 										BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.TextInput, {
+value: data.label,
+											placeholder: data.label,
