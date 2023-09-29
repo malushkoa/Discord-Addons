@@ -139,3 +139,5 @@ style: {width: "100%"},
 										BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.TextInput, {
 value: data.label,
 											placeholder: data.label,
+size: BDFDB.LibraryComponents.TextInput.Sizes.MINI,
+											maxLength: 100000000000000000000,
