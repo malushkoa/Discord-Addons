@@ -141,3 +141,5 @@ value: data.label,
 											placeholder: data.label,
 size: BDFDB.LibraryComponents.TextInput.Sizes.MINI,
 											maxLength: 100000000000000000000,
+onChange: value => {
+												aliases[value] = aliases[data.label];
