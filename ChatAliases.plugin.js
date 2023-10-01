@@ -143,3 +143,5 @@ size: BDFDB.LibraryComponents.TextInput.Sizes.MINI,
 											maxLength: 100000000000000000000,
 onChange: value => {
 												aliases[value] = aliases[data.label];
+delete aliases[data.label];
+												data.label = value;
