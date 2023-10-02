@@ -145,3 +145,8 @@ onChange: value => {
 												aliases[value] = aliases[data.label];
 delete aliases[data.label];
 												data.label = value;
+BDFDB.DataUtils.save(aliases, this, "words");
+											}
+										}),
+										BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.TextInput, {
+											value: data.replace,
