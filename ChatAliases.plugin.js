@@ -150,3 +150,5 @@ BDFDB.DataUtils.save(aliases, this, "words");
 										}),
 										BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.TextInput, {
 											value: data.replace,
+placeholder: data.replace,
+											size: BDFDB.LibraryComponents.TextInput.Sizes.MINI,
