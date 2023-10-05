@@ -155,3 +155,10 @@ placeholder: data.replace,
 maxLength: 100000000000000000000,
 											onChange: value => {
 												aliases[data.label].replace = value;
+	BDFDB.DataUtils.save(aliases, this, "words");
+											}
+										})
+									]
+								}),
+								onCheckboxChange: (value, instance) => {
+									aliases[instance.props.cardId][instance.props.settingId] = value;
