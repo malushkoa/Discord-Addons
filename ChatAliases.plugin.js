@@ -162,3 +162,8 @@ maxLength: 100000000000000000000,
 								}),
 								onCheckboxChange: (value, instance) => {
 									aliases[instance.props.cardId][instance.props.settingId] = value;
+	BDFDB.DataUtils.save(aliases, this, "words");
+								},
+								onRemove: (e, instance) => {
+									delete aliases[instance.props.cardId];
+									BDFDB.DataUtils.save(aliases, this, "words");
