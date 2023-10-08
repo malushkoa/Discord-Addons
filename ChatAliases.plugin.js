@@ -167,3 +167,5 @@ maxLength: 100000000000000000000,
 								onRemove: (e, instance) => {
 									delete aliases[instance.props.cardId];
 									BDFDB.DataUtils.save(aliases, this, "words");
+BDFDB.PluginUtils.refreshSettingsPanel(this, settingsPanel, collapseStates);
+								}
