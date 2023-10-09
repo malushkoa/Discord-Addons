@@ -169,3 +169,7 @@ maxLength: 100000000000000000000,
 									BDFDB.DataUtils.save(aliases, this, "words");
 BDFDB.PluginUtils.refreshSettingsPanel(this, settingsPanel, collapseStates);
 								}
+})
+						}));
+						
+						settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
