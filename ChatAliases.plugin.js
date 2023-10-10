@@ -173,3 +173,6 @@ BDFDB.PluginUtils.refreshSettingsPanel(this, settingsPanel, collapseStates);
 						}));
 						
 						settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
+title: "Remove All",
+							collapseStates: collapseStates,
+							children: BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsItem, {
