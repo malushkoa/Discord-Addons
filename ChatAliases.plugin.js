@@ -176,3 +176,6 @@ BDFDB.PluginUtils.refreshSettingsPanel(this, settingsPanel, collapseStates);
 title: "Remove All",
 							collapseStates: collapseStates,
 							children: BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsItem, {
+type: "Button",
+								color: BDFDB.LibraryComponents.Button.Colors.RED,
+								label: "Remove all added Aliases",
