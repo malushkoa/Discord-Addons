@@ -179,3 +179,5 @@ title: "Remove All",
 type: "Button",
 								color: BDFDB.LibraryComponents.Button.Colors.RED,
 								label: "Remove all added Aliases",
+onClick: _ => {
+									BDFDB.ModalUtils.confirm(this, "Are you sure you want to remove all added Aliases?", _ => {
