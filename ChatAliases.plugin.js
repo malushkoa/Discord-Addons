@@ -187,3 +187,7 @@ aliases = {};
 									});
 								},
 								children: BDFDB.LanguageUtils.LanguageStrings.REMOVE
+})
+						}));
+						
+						settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
