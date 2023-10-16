@@ -191,3 +191,7 @@ aliases = {};
 						}));
 						
 						settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
+title: "Config Guide",
+							collapseStates: collapseStates,
+							children: [
+								"Case: Will replace Words while comparing lowercase/uppercase. apple => apple, not APPLE or AppLe",
