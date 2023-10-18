@@ -197,3 +197,6 @@ title: "Config Guide",
 								"Case: Will replace Words while comparing lowercase/uppercase. apple => apple, not APPLE or AppLe",
 "Not Case: Will replace Words while ignoring lowercase/uppercase. apple => apple, APPLE and AppLe",
 								"Exact: Will replace Words that are exactly the Replacement Value. apple to pear => applepie stays applepie",
+"Not Exact: Will replace Words anywhere they appear. apple to pear => applepieapple to pearpiepear",
+								[
+									"Regex: Will treat the entered Word Value as a Regular Expression - ",
