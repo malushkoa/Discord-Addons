@@ -200,3 +200,6 @@ title: "Config Guide",
 "Not Exact: Will replace Words anywhere they appear. apple to pear => applepieapple to pearpiepear",
 								[
 									"Regex: Will treat the entered Word Value as a Regular Expression - ",
+BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Anchor, {href: "https://regexr.com/", children: BDFDB.LanguageUtils.LanguageStrings.HELP + "?"})
+								]
+							].map(string => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.FormComponents.FormText, {
