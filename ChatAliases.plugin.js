@@ -203,3 +203,5 @@ title: "Config Guide",
 BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Anchor, {href: "https://regexr.com/", children: BDFDB.LanguageUtils.LanguageStrings.HELP + "?"})
 								]
 							].map(string => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.FormComponents.FormText, {
+	type: BDFDB.LibraryComponents.FormComponents.FormText.Types.DESCRIPTION,
+								children: string
