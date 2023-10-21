@@ -205,3 +205,13 @@ BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Anchor, {href: "https://r
 							].map(string => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.FormComponents.FormText, {
 	type: BDFDB.LibraryComponents.FormComponents.FormText.Types.DESCRIPTION,
 								children: string
+}))
+						}));
+						
+						return settingsItems;
+					}
+				});
+			}
+
+			onSettingsClosed () {
+				if (this.SettingsUpdated) {
