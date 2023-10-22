@@ -215,3 +215,5 @@ BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Anchor, {href: "https://r
 
 			onSettingsClosed () {
 				if (this.SettingsUpdated) {
+	delete this.SettingsUpdated;
+					BDFDB.PatchUtils.forceAllUpdates(this);
