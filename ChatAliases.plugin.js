@@ -217,3 +217,8 @@ BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Anchor, {href: "https://r
 				if (this.SettingsUpdated) {
 	delete this.SettingsUpdated;
 					BDFDB.PatchUtils.forceAllUpdates(this);
+}
+			}
+
+			onTextAreaContextMenu (e) {
+				let text = document.getSelection().toString().trim();
