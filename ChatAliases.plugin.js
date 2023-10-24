@@ -222,3 +222,9 @@ BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.Anchor, {href: "https://r
 
 			onTextAreaContextMenu (e) {
 				let text = document.getSelection().toString().trim();
+if (text && this.settings.general.addContextMenu) this.injectItem(e, text);
+			}
+
+			onMessageContextMenu (e) {
+				let text = document.getSelection().toString().trim();
+				if (text && this.settings.general.addContextMenu) this.injectItem(e, text);
