@@ -228,3 +228,7 @@ if (text && this.settings.general.addContextMenu) this.injectItem(e, text);
 			onMessageContextMenu (e) {
 				let text = document.getSelection().toString().trim();
 				if (text && this.settings.general.addContextMenu) this.injectItem(e, text);
+}
+		 
+			injectItem (e, text) {
+				let [children, index] = BDFDB.ContextMenuUtils.findItem(e.returnvalue, {id: "devmode-copy-id", group: true});
