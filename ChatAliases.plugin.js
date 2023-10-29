@@ -235,3 +235,5 @@ if (text && this.settings.general.addContextMenu) this.injectItem(e, text);
 children.splice(index > -1 ? index : children.length, 0, BDFDB.ContextMenuUtils.createItem(BDFDB.LibraryComponents.MenuItems.MenuGroup, {
 children: BDFDB.ContextMenuUtils.createItem(BDFDB.LibraryComponents.MenuItems.MenuItem, {
 label: BDFDB.LanguageUtils.LibraryStringsFormat("add_to", "ChatAliases"),
+id: BDFDB.ContextMenuUtils.createItemId(this.name, "add-alias"),
+						action: _ => this.openAddModal(text.replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t"))
