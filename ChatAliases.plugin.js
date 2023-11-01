@@ -237,3 +237,8 @@ children: BDFDB.ContextMenuUtils.createItem(BDFDB.LibraryComponents.MenuItems.Me
 label: BDFDB.LanguageUtils.LibraryStringsFormat("add_to", "ChatAliases"),
 id: BDFDB.ContextMenuUtils.createItemId(this.name, "add-alias"),
 						action: _ => this.openAddModal(text.replace(/\n/g, "\\n").replace(/\r/g, "\\r").replace(/\t/g, "\\t"))
+})
+				}));
+			}
+			
+			processChannelTextAreaContainer (e) {
