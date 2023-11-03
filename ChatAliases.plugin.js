@@ -244,3 +244,4 @@ id: BDFDB.ContextMenuUtils.createItemId(this.name, "add-alias"),
 			processChannelTextAreaContainer (e) {
 if (!this.shouldInject(e.instance.props.type)) return;
 				BDFDB.PatchUtils.patch(this, e.instance.props, "onSubmit", {before: e2 => {
+if (BDFDB.LibraryStores.SlowmodeStore.getSlowmodeCooldownGuess(e.instance.props.channel.id) > 0) return;
