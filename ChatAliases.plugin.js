@@ -245,3 +245,4 @@ id: BDFDB.ContextMenuUtils.createItemId(this.name, "add-alias"),
 if (!this.shouldInject(e.instance.props.type)) return;
 				BDFDB.PatchUtils.patch(this, e.instance.props, "onSubmit", {before: e2 => {
 if (BDFDB.LibraryStores.SlowmodeStore.getSlowmodeCooldownGuess(e.instance.props.channel.id) > 0) return;
+let messageData = this.formatText(e2.methodArguments[0].value);
