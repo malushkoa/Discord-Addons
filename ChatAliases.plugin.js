@@ -248,3 +248,5 @@ if (BDFDB.LibraryStores.SlowmodeStore.getSlowmodeCooldownGuess(e.instance.props.
 let messageData = this.formatText(e2.methodArguments[0].value);
 if (messageData) {
 						if (messageData.text != null && e2.methodArguments[0].value != messageData.text) {
+e2.methodArguments[0].value = messageData.text;
+							e.instance.props.textValue = "";
