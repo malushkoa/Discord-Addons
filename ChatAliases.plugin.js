@@ -250,3 +250,4 @@ if (messageData) {
 						if (messageData.text != null && e2.methodArguments[0].value != messageData.text) {
 e2.methodArguments[0].value = messageData.text;
 							e.instance.props.textValue = "";
+if (e.instance.props.richValue) e.instance.props.richValue = BDFDB.SlateUtils.toRichValue("");
