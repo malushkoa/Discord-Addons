@@ -253,3 +253,6 @@ e2.methodArguments[0].value = messageData.text;
 if (e.instance.props.richValue) e.instance.props.richValue = BDFDB.SlateUtils.toRichValue("");
 if (e.instance.state) {
 								e.instance.state.textValue = "";
+	if (e.instance.state.richValue) e.instance.state.richValue = BDFDB.SlateUtils.toRichValue("");
+							}
+							BDFDB.ReactUtils.forceUpdate(e.instance);
