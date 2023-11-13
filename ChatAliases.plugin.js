@@ -268,3 +268,5 @@ if (e.instance.state) {
 			formatText (text) {
 				text = text.replace(/([\n\t\r])/g, " $1 ");
 let newText = [], wordAliases = {}, multiAliases = {};
+for (let word in aliases) {
+					if (!aliases[word].regex && word.indexOf(" ") == -1) wordAliases[word] = aliases[word];
