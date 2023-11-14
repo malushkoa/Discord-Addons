@@ -270,3 +270,6 @@ if (e.instance.state) {
 let newText = [], wordAliases = {}, multiAliases = {};
 for (let word in aliases) {
 					if (!aliases[word].regex && word.indexOf(" ") == -1) wordAliases[word] = aliases[word];
+	else multiAliases[word] = aliases[word];
+				}
+				for (let word of text.trim().split(" ")) newText.push(this.useAliases(word, wordAliases, true));
