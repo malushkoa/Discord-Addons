@@ -275,3 +275,4 @@ for (let word in aliases) {
 				for (let word of text.trim().split(" ")) newText.push(this.useAliases(word, wordAliases, true));
 newText = newText.length == 1 ? newText[0] : newText.join(" ");
 				newText = newText.replace(/ ([\n\t\r]) /g, "$1");
+newText = this.useAliases(newText, multiAliases, false);
