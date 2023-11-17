@@ -276,3 +276,8 @@ for (let word in aliases) {
 newText = newText.length == 1 ? newText[0] : newText.join(" ");
 				newText = newText.replace(/ ([\n\t\r]) /g, "$1");
 newText = this.useAliases(newText, multiAliases, false);
+return {text: newText};
+			}
+
+			useAliases (string, aliases, singleWord) {
+				for (let word of Object.keys(aliases).filter(n => n).sort((x, y) => x.length > y.length ? -1 : x.length < y.length ? 1 : 0)) {
