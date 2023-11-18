@@ -281,3 +281,5 @@ return {text: newText};
 
 			useAliases (string, aliases, singleWord) {
 				for (let word of Object.keys(aliases).filter(n => n).sort((x, y) => x.length > y.length ? -1 : x.length < y.length ? 1 : 0)) {
+	let result = true, replaced = false, tempString1 = string, tempString2 = "";
+					let config = aliases[word];
