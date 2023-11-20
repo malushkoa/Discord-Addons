@@ -284,3 +284,6 @@ return {text: newText};
 	let result = true, replaced = false, tempString1 = string, tempString2 = "";
 					let config = aliases[word];
 let escpAlias = config.regex ? word : BDFDB.StringUtils.regEscape(word);
+let regString = config.exact ? "^" + escpAlias + "$" : escpAlias;
+					while (result != null) {
+						result = new RegExp(regString, `${config.case ? "" : "i"}${config.exact ? "" : "g"}`).exec(tempString1);
