@@ -287,3 +287,6 @@ let escpAlias = config.regex ? word : BDFDB.StringUtils.regEscape(word);
 let regString = config.exact ? "^" + escpAlias + "$" : escpAlias;
 					while (result != null) {
 						result = new RegExp(regString, `${config.case ? "" : "i"}${config.exact ? "" : "g"}`).exec(tempString1);
+if (result) {
+							replaced = true;
+							let replacement = BDFDB.StringUtils.insertNRST(config.replace);
