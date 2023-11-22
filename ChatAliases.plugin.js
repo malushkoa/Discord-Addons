@@ -290,3 +290,4 @@ let regString = config.exact ? "^" + escpAlias + "$" : escpAlias;
 if (result) {
 							replaced = true;
 							let replacement = BDFDB.StringUtils.insertNRST(config.replace);
+if (result.length > 1) for (let i = 1; i < result.length; i++) replacement = replacement.replace(new RegExp("\\\\" + i + "|\\$" + i, "g"), result[i]);
