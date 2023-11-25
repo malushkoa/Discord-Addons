@@ -293,3 +293,6 @@ if (result) {
 if (result.length > 1) for (let i = 1; i < result.length; i++) replacement = replacement.replace(new RegExp("\\\\" + i + "|\\$" + i, "g"), result[i]);
 tempString2 += tempString1.slice(0, result.index + result[0].length).replace(result[0], !config.regex && !config.case ? BDFDB.StringUtils.equalCase(result[0], replacement) : replacement);
 							tempString1 = tempString1.slice(result.index + result[0].length);
+if (config.regex && regString.indexOf("^") == 0) result = null;
+						}
+						if (!result) tempString2 += tempString1;
