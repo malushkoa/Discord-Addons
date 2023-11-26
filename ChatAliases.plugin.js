@@ -296,3 +296,5 @@ tempString2 += tempString1.slice(0, result.index + result[0].length).replace(res
 if (config.regex && regString.indexOf("^") == 0) result = null;
 						}
 						if (!result) tempString2 += tempString1;
+}
+					if (replaced) {
