@@ -298,3 +298,4 @@ if (config.regex && regString.indexOf("^") == 0) result = null;
 						if (!result) tempString2 += tempString1;
 }
 					if (replaced) {
+	string = tempString2;
