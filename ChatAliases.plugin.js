@@ -299,3 +299,11 @@ if (config.regex && regString.indexOf("^") == 0) result = null;
 }
 					if (replaced) {
 	string = tempString2;
+if (singleWord) break;
+					}
+				}
+				return string;
+			}
+
+			openAddModal (wordValue) {
+				let values = {wordValue, replaceValue: ""};
