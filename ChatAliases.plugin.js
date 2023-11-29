@@ -307,3 +307,6 @@ if (singleWord) break;
 
 			openAddModal (wordValue) {
 				let values = {wordValue, replaceValue: ""};
+let configs = BDFDB.ObjectUtils.map(this.defaults.configs, n => n.value);
+				
+				BDFDB.ModalUtils.open(this, {
