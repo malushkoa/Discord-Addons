@@ -312,3 +312,7 @@ let configs = BDFDB.ObjectUtils.map(this.defaults.configs, n => n.value);
 				BDFDB.ModalUtils.open(this, {
 size: "MEDIUM",
 					header: BDFDB.LanguageUtils.LibraryStringsFormat("add_to", "ChatAliases"),
+subHeader: "",
+					children: [
+						this.createInputs(values),
+						Object.keys(configs).map(key => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsItem, {
