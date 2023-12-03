@@ -318,3 +318,5 @@ subHeader: "",
 						Object.keys(configs).map(key => BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.SettingsItem, {
 type: "Switch",
 							label: this.defaults.configs[key].description,
+value: configs[key],
+							onChange: value => {configs[key] = value;}
