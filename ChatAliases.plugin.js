@@ -320,3 +320,7 @@ type: "Switch",
 							label: this.defaults.configs[key].description,
 value: configs[key],
 							onChange: value => {configs[key] = value;}
+	}))
+					].flat(10).filter(n => n),
+					buttons: [{
+						disabled: !Object.keys(values).every(valueName => values[valueName]),
