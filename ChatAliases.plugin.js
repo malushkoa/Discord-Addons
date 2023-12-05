@@ -324,3 +324,5 @@ value: configs[key],
 					].flat(10).filter(n => n),
 					buttons: [{
 						disabled: !Object.keys(values).every(valueName => values[valueName]),
+children: BDFDB.LanguageUtils.LanguageStrings.ADD,
+									ref: instance => {if (instance) values.addButton = instance;},
