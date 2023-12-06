@@ -326,3 +326,6 @@ value: configs[key],
 						disabled: !Object.keys(values).every(valueName => values[valueName]),
 children: BDFDB.LanguageUtils.LanguageStrings.ADD,
 									ref: instance => {if (instance) values.addButton = instance;},
+onClick: _ => {
+										this.saveWord(values);
+										BDFDB.PluginUtils.refreshSettingsPanel(this, settingsPanel, collapseStates);
