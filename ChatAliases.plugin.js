@@ -329,3 +329,10 @@ children: BDFDB.LanguageUtils.LanguageStrings.ADD,
 onClick: _ => {
 										this.saveWord(values);
 										BDFDB.PluginUtils.refreshSettingsPanel(this, settingsPanel, collapseStates);
+}
+								}),
+								this.createInputs(values)
+							].flat(10).filter(n => n)
+						}));
+						
+						if (!BDFDB.ObjectUtils.isEmpty(aliases)) settingsItems.push(BDFDB.ReactUtils.createElement(BDFDB.LibraryComponents.CollapseContainer, {
